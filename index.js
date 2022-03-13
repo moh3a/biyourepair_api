@@ -11,7 +11,9 @@ const app = express();
 const port = process.env.PORT;
 
 app.use(bodyParser.json());
-app.use(cors({ origin: "https://biyou-repair.web.app" }));
+app.use(
+  cors({ origin: ["https://biyou-repair.web.app", "http://localhost:19006"] })
+);
 
 app.get("/", (req, res) => {
   res.json({
