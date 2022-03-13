@@ -2,7 +2,7 @@ import { config } from "dotenv";
 import nodemailer from "nodemailer";
 
 config();
-export const sendEmail = ({ from, to, subject, text }) => {
+const sendEmail = ({ from, to, subject, text }) => {
   const date = new Date().toISOString();
 
   const transporter = nodemailer.createTransport({
@@ -67,3 +67,5 @@ export const sendEmail = ({ from, to, subject, text }) => {
     }
   });
 };
+
+export default sendEmail;

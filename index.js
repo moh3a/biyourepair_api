@@ -3,7 +3,8 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-import router from "./routes/email.js";
+import emailRouter from "./routes/email.js";
+import smartphonesRouter from "./routes/smartphones.js";
 
 config();
 const app = express();
@@ -20,7 +21,8 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/email", router);
+app.use("/email", emailRouter);
+app.use("/smartphones", smartphonesRouter);
 
 app.listen(port, () => {
   console.log("biyou-repair API is listening on http://localhost:" + port);
