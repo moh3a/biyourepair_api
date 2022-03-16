@@ -1,4 +1,5 @@
 import Apple from "./models/Apple.json";
+import Asus from "./models/Asus.json";
 import Condor from "./models/Condor.json";
 import Google from "./models/Google.json";
 import Honor from "./models/Honor.json";
@@ -26,6 +27,10 @@ const Brands = [
   {
     name: "Apple",
     models: Apple,
+  },
+  {
+    name: "Asus",
+    models: Asus,
   },
   {
     name: "Condor",

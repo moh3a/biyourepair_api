@@ -9,11 +9,11 @@ import smartphonesRouter from "./routes/smartphones.js";
 config();
 const app = express();
 const port = process.env.PORT;
+const origin =
+  process.env.ENVIRONMENT === "dev" ? "*" : "https://biyou-repair.web.app";
 
 app.use(bodyParser.json());
-app.use(
-  cors({ origin: ["https://biyou-repair.web.app", "http://localhost:19006"] })
-);
+app.use(cors({ origin }));
 
 app.get("/", (req, res) => {
   res.json({

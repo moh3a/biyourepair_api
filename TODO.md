@@ -1,1 +1,1 @@
-brands: huawei, lenovo, lg, motorola, nokia, oppo, samsung, sony, vivo, zte
+brands: lenovo, lg, motorola, oppo, samsung, sony, vivo
