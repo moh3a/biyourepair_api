@@ -245,7 +245,6 @@ const Samsung = [
   { name: "Galaxy S2", type: "smartphone" },
   { name: "Galaxy Tab", type: "tablet" },
   { name: "Galaxy S", type: "smartphone" },
-  v,
 ];
 
 export default Samsung;
